@@ -53,21 +53,37 @@ div{
 .navbar a:hover {
     background: #3f3f3f;
 }
+.relleno{
+    color: #fff
+}
+.h3{
+    color: #fff;
+}
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.relleno1{
+    color: black;
 }
 
 .header {
-    height: 60vh !important;
-    background-image: url(pics\imgheader2.jpg) no-repeat center;
-    background-size: cover;
-    border: 0;
+        background-image: url('pics/imgheader.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
 }
-
+.contentprice{
+    height: 60vh;
+    background-image: url('pics/fondo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+.title1 {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
 .title {
     margin-bottom: 40px;
     font-size: 60px;
@@ -108,7 +124,7 @@ p {
 
 
 .content {
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,3 +218,24 @@ p {
     font-family: kiwi maru;
     src: url(fuentes/KiwiMaru-Light.ttf);
 }
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#101010;
+}
+
+
+form {padding: 5px;}
+
+label {margin: 5px 0px; clear: both; display: block;color: #fff;}
+
+input {padding: 4px; border: solid 1px #fff;}
+
+::placeholder, option, value {color: #31a3dd; font-weight: bold;}
+
+*:focus {border-color: #31a3dd; }
+
+input[type="submit"] {padding: 10px 20px; text-transform: uppercase; cursor: pointer; background-color: #31a3dd; border: solid 1px #ededed;}
+
+input[type="submit"]:hover {background-color: #82C8EA;}
