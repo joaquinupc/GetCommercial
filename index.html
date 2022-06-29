@@ -21,46 +21,36 @@
             <a href="#">Inicio</a>
             <a href="#Nosotros">Nosotros</a>
             <a href="#Contacto">Contacto</a>
-            <a href="#Productos">Productos</a>
+            <a href="#Planes">planes</a>
             <a href="https://forms.gle/XihG4xSJqjZ1S6ow7">Califiquenos</a>
         </nav>
 
     </div>
 
     <header class="content header">
-        <h2 class="title">Inicio</h2>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Ipsam necessitatibus odio quisquam reprehenderit quas, 
-             obcaecati, harum hic molestiae sequi ipsa nihil id tempore explicabo 
-            libero vero quia asperiores similique dicta.
+        <div class="p_inicio">
+
+        <h2 class="title1">Inicio</h2>
+        <p  class="relleno1">
+            Somos una empresa que busca ofrecer herramientas
+            como un editor de iconos, banners o publicidad, ademas de ofrecer
+            asesorias para complementar y guiar a los emprendedores a publicitar
+            su propio negocio
         </p>
-
-
+    </div>
     </header>
-    <a name="Productos" id="Productos"></a>
-    <section class="content sau">
+    <a name="#Planes" id="#Planes"></a>
+    <section class="content sau" >
 
-        <h2 class="title">Productos</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
-            elit. Veritatis excepturi dolore, harum asperiores 
-            cupiditate officiis quia odit reiciendis quidem iure 
-            architecto laudantium 
-            nihil saepe pariatur vel labore molestias consectetur veniam?</p>
+        <h2 class="title" >planes</h2>
+        <p  class="relleno">
+            Nuestro servicio ofrece paquetes segun las preferencias del usuario
+        </p>
         
-        <div class="box-container">
-
-            <div class="box">
-                <i class="fab fa-angular"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
-            <div class="box">
-                <i class="fab fa-apple"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
-
+        <div class="price">
+            <picture class="picturep">
+                <img src="pics/PRECIOS1.png">
+            </picture>
         </div>
 
     </section>
@@ -68,41 +58,37 @@
     <section class="content about">
 
         <h2 class="title">Nosotros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Ut soluta similique 
-            quia reprehenderit eligendi aliquam. Sit 
-            odio impedit quibusdam. Velit corporis, 
-            optio debitis quidem ex ipsam rerum dolorem autem sequi.
+        <h3 class="h3">Mision</h3>
+        <p  class="relleno">
+            Somos una empresa que busca brindar una herramienta que sirva como plataforma de creación de productos publicitarios, promoción, asesoría, libre creatividad e innovación para los negocios.
         </p>
-
-        <a href="#" class="btn">Saber mas</a>
+        <h3 class="h3">Vision</h3>
+        <p  class="relleno">
+            Ser líder en el mercado de publicidad peruano en brindar soluciones tecnológicas para aquellos que buscan soporte especializado en distintos entornos de trabajo mediante la instalación de software que le permita desarrollar más la calidad de marketing y publicidad de su negocio.
+        </p>
 
     </section>
 
-    <section class="content price">
-
+    <section class="contentprice">
         <article class="contain">
-            <h2 class="title">Precio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Ut soluta similique 
-                quia reprehenderit eligendi aliquam. Sit 
-                odio impedit quibusdam. Velit corporis, 
-                optio debitis quidem ex ipsam rerum dolorem autem sequi.
+            <h2 class="title1">Asesorias personalizadas</h2>
+            <p class="relleno1">No espere mas y comienze de una vez sus asesorias personalizadas con profesionales que los guiaran
+             a que su negocio este a otro nivel y aprovechar el mundo del marketing digital
             </p>
-
-            <a href="#" class="btn">Saber precio</a>
-
         </article>
-
     </section>
     <a name="Contacto" id="Contacto"></a>
     <section class="content contact">
         <h2 class="title">Contacto</h2>
-        <p>48481548</p>
-        <figure class="map">
-            <img src="img/mapa.png" height="220px" width="100%" alt="mapa">
-        </figure>
+        <form action="enviar-formulario.php" method="post"><label>Nombre:</label>
+        <input maxlength="50" name="nombre" required size="50" type="text" autofocus placeholder="Escriba su nombre" /><label>Email:</label>
+        <input required size="50" name="email" required type="email" placeholder="Escriba su email" />
+        <label>Teléfono</label>
+        <input name="telefono" pattern="[0-9]{9}" required type="tel" placeholder="" />
+        </form>
     </section>
+
+
     
 </body>
 </html>
